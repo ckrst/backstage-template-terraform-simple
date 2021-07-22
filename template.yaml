@@ -6,7 +6,7 @@ metadata:
   title: Terraform project template
   description: a simple terraform template
 spec:
-  owner: viniktw
+  owner: ckrst
   type: library
 
   # these are the steps which are rendered in the frontend with the form input
@@ -48,12 +48,12 @@ spec:
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           owner: '{{ parameters.owner }}'
 
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
+    # - id: fetch-docs
+    #   name: Fetch Docs
+    #   action: fetch:plain
+    #   input:
+    #     targetPath: ./community
+    #     url: https://github.com/backstage/community/tree/main/backstage-community-sessions
 
     - id: publish
       name: Publish
